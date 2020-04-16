@@ -15,7 +15,7 @@ jsproxy_config({
     'gce-cn-tw': {
       label: 'Google Cloud 中国台湾',
       lines: {
-        'p2.njzjz.win': 1,
+        'p2.njzjz.win:8443': 1,
       },
     },
     // 该节点用于加载大体积的静态资源
