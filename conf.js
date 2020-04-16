@@ -12,31 +12,18 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
+    'gce-cn-tw': {
+      label: 'Google Cloud 中国台湾',
       lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
-      }
-    },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
+        'p2.njzjz.win': 1,
       },
-    },
-    'mysite': {
-      label: '当前站点',
-      lines: {
-        [location.host]: 1,
-      }
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
       hidden: true,
       lines: {
+        'p.njzjz.win': 1,
         // 收费版（高权重）
         //'node-cfworker-2.etherdream.com': 4,
 
@@ -53,7 +40,7 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'mysite',
+  node_default: 'gce-cn-tw',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
@@ -89,7 +76,10 @@ jsproxy_config({
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
     },
     'https://www.pornhub.com/': {
-      redir: 'https://php.net/'
+      redir: 'https://www.ecnu.edu.cn/'
+    },
+    'https://www.epochtimes.com/': {
+      redir: 'https://www.ecnu.edu.cn/'
     },
     'http://haha.com/': {
       content: 'Hello World'
