@@ -17,7 +17,7 @@ jsproxy_config({
       label: 'CloudFlare Workers',
       hidden: false,
       lines: {
-        'jsproxy.njzjz.win': 1,
+        'wvpn.jinzhezeng.group': 1,
         // 收费版（高权重）
         //'node-cfworker-2.etherdream.com': 4,
 
@@ -70,10 +70,10 @@ jsproxy_config({
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
     },
     'https://www.pornhub.com/': {
-      redir: 'https://www.ecnu.edu.cn/'
+      redir: 'https://www.ustc.edu.cn/'
     },
     'https://www.epochtimes.com/': {
-      redir: 'https://www.ecnu.edu.cn/'
+      redir: 'https://www.ustc.edu.cn/'
     },
     'http://haha.com/': {
       content: 'Hello World'
